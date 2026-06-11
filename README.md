@@ -49,7 +49,7 @@ A full-stack web application that automatically publishes videos to YouTube from
    cd ../server && npm install
    ```
 
-3. **Create `.env`** in the project root
+3. **Create `.env`** in the project root (only needed for deployment, not for end users)
    ```env
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_secret_key
@@ -60,6 +60,7 @@ A full-stack web application that automatically publishes videos to YouTube from
    PORT=5000
    POLL_INTERVAL_MINUTES=5
    ```
+   > **Note:** This is a one-time server configuration done by the admin who deploys the platform. End users don't need to touch this — they simply register, connect their Google account from Settings, and start publishing.
 
 4. **Run the app**
    ```bash
