@@ -1,0 +1,16 @@
+{
+  "name": "youtube-automatic-publishing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

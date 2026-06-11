@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(mongod --version)",
+      "WebSearch",
+      "Bash(cd:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm create:*)",
+      "Bash(npx vite:*)",
+      "Bash(npm run:*)",
+      "Bash(nslookup:*)",
+      "Bash(node -e \":*)",
+      "Bash(curl:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\)[''''data'''']; print\\(f\"\"Status: {d[''''status'''']}\\\\nError: {d.get\\(''''errorMessage''''\\)}\\\\nYouTube: {d.get\\(''''youtubeUrl''''\\)}\"\"\\)\")",
+      "Bash(find . -type f ! -name '.gitkeep' -delete)",
+      "Bash(node -e \"const d=require\\(''''fs''''\\).readFileSync\\(''''/dev/stdin'''',''''utf8''''\\);const v=JSON.parse\\(d\\).data[0];if\\(v\\){console.log\\(''''Tags in DB:'''', JSON.stringify\\(v.tags\\)\\);console.log\\(''''Title:'''', v.videoTitle\\)}else{console.log\\(''''No videos''''\\)}\")",
+      "Bash(node -e \"import\\(''lucide-react''\\).then\\(m => console.log\\(Object.keys\\(m\\).filter\\(k => k.includes\\(''Play''\\) || k.includes\\(''Video''\\) || k.includes\\(''Tv''\\)\\).slice\\(0,20\\).join\\('', ''\\)\\)\\)\")",
+      "Bash(node -e \"import\\(''lucide-react''\\).then\\(m => console.log\\(Object.keys\\(m\\).filter\\(k => k.includes\\(''Play''\\) || k.includes\\(''Video''\\) || k.includes\\(''Tv''\\) || k.includes\\(''Monitor''\\)\\).filter\\(k => !k.includes\\(''Lucide''\\) && !k.includes\\(''Icon''\\)\\).join\\('', ''\\)\\)\\)\")",
+      "Bash(node -e \"import\\(''express''\\).then\\(m => console.log\\(''Express version:'', m.default ? ''default export'' : ''named'', Object.keys\\(m\\).join\\('', ''\\)\\)\\)\")",
+      "Bash(node -e \"import express from ''express''; const app = express\\(\\); import\\(''./routes/auth.js''\\).then\\(m => { console.log\\(''Auth module keys:'', Object.keys\\(m\\)\\); console.log\\(''Default export:'', typeof m.default\\); console.log\\(''Has stack:'', m.default?.stack ? m.default.stack.length + '' routes'' : ''no stack''\\); }\\)\")",
+      "Bash(netstat -ano)",
+      "Bash(tasklist /FI 'PID eq 79976')",
+      "Bash(wmic process:*)",
+      "Bash(taskkill:*)",
+      "Bash(xargs grep:*)",
+      "Bash(find G:youtube-automatic-publishingclient/dist -type f \\\\\\(-name *.svg -o -name *.png -o -name *.jpg \\\\\\))",
+      "Bash(grep -r \"hero\\\\|react\\\\|vite\" G:youtube-automatic-publishingclient/src --include=*.jsx --include=*.js)"
+    ]
+  }
+}
