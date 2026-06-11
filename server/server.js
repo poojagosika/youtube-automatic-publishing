@@ -39,6 +39,15 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
+// Serve frontend in production
+if (process.env.NODE_ENV === "production") {
+  const clientDist = join(__dirname, "..", "client", "dist");
+  app.use(express.static(clientDist));
+  app.get("*", (req, res) => {
+    res.sendFile(join(clientDist, "index.html"));
+  });
+}
+
 // Global error handler
 app.use((err, req, res, next) => {
   console.error("Unhandled error:", err);
